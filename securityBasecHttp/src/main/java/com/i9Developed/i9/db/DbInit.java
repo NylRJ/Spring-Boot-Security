@@ -26,13 +26,13 @@ public class DbInit implements CommandLineRunner {
 	public void run(String... args) throws Exception {
 		
 		//cria usuario
-		User dan = new User("dan",passwordEncoder.encode("dan123"),"USER","");
+		User maria = new User("maria",passwordEncoder.encode("maria123"),"USER","");
         User admin = new User("admin",passwordEncoder.encode("admin123"),"ADMIN","ACCESS_TEST1,ACCESS_TEST2");
         User manager = new User("manager",passwordEncoder.encode("manager123"),"MANAGER","ACCESS_TEST1");
         
         
         //salva no banco
-        userRepository.saveAll(Arrays.asList(dan,admin,manager));
+        userRepository.saveAll(Arrays.asList(maria,admin,manager));
 	}
 
 }
