@@ -24,7 +24,7 @@ public class DbInit implements CommandLineRunner {
 	}
 	@Override
 	public void run(String... args) throws Exception {
-		
+		userRepository.deleteAll();
 		//cria usuario
 		User maria = new User("maria",passwordEncoder.encode("maria123"),"USER","");
         User admin = new User("admin",passwordEncoder.encode("admin123"),"ADMIN","ACCESS_TEST1,ACCESS_TEST2");
