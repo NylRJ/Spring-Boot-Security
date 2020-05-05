@@ -1,4 +1,4 @@
-package com.i9Developed.i9.security;
+ package com.i9Developed.i9.security;
 
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.core.userdetails.UserDetailsService;
@@ -10,7 +10,7 @@ import com.i9Developed.i9.model.User;
 
 @Service
 public class UserPrincipalDetailsService implements UserDetailsService{
-	
+	//retirar o contrutor e colocar um anotation autowared
 	private UserRepository userRepository;
 
 public UserPrincipalDetailsService(UserRepository userRepository) {

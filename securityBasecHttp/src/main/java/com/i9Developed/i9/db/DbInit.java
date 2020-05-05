@@ -12,15 +12,15 @@ import com.i9Developed.i9.model.User;
 @Service
 public class DbInit implements CommandLineRunner {
 	
-	@Autowired
+	
 	private UserRepository userRepository;
 	
-	@Autowired
+	
 	private PasswordEncoder passwordEncoder;
 	
-	public DbInit (UserRepository userRepository){
+	public DbInit (UserRepository userRepository, PasswordEncoder passwordEncoder){
 		this.userRepository = userRepository;
-		
+		this.passwordEncoder = passwordEncoder;
 	}
 	@Override
 	public void run(String... args) throws Exception {

@@ -18,7 +18,7 @@ public class User {
     @Column(nullable = false)
     private String password;
 
-    private int active;
+    private Integer active;
 
     private String roles = "";
 
@@ -46,7 +46,7 @@ public class User {
         return password;
     }
 
-    public int getActive() {
+    public Integer getActive() {
         return active;
     }
 

@@ -11,6 +11,8 @@ import org.springframework.security.core.userdetails.UserDetails;
 import com.i9Developed.i9.model.User;
 
 public class UserPrincipal implements UserDetails{
+
+	
 	private User user;
 	
 	public UserPrincipal(User user) {
